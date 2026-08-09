@@ -14,6 +14,7 @@ Restructure the fork into a Cargo workspace with the vendored Robyn crate and em
 3. CI: upstream Rust + Python test suites green against the workspace layout; workspace `cargo publish --dry-run` job to surface wheel/workspace conflicts early (G4 risk).
 4. `pettirosso` reserved on PyPI and crates.io (placeholder 0.0.1). **Non-closure**: the crates.io name for the runtime core itself (O-4) is *not* decided here; only the umbrella name is reserved.
 5. Upstream remote configured; documented `git fetch upstream && git merge` procedure with the minimal-diff rule stated in `crates/robyn/README.vendored.md`.
+6. GitHub fork relationship detached (Rand, UI-only: Settings → Danger Zone → "Leave fork network") so `gh` stops targeting sparckles/Robyn for PRs. Upstream tracking is unaffected — it runs entirely through the git remote per deliverable 5. Until detached, all `gh` PR commands must owner-qualify (`-R randlee/pettirosso`).
 
 ## Paths to delete
 
