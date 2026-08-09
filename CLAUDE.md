@@ -102,10 +102,11 @@ registration is a permanent plugin mechanism, not merely an incubation stage.
 - Persistent cross-session state: capture significant decisions/progress to
   open-brain (`capture_thought`) at session midpoints and ends.
 
-## Not yet installed (planned, pending Rand's curation approval)
+## Agents & skills: not yet installed
 
-`.claude/agents/`, `.claude/skills/` (plan-hardening, rust-development,
-worktree tooling, codex-orchestration), worktree discipline, and the
-omega-prime channel are to be ported from atm-core once Rand approves the
-curation manifest. Until then: single-session Claude Code, working directly
-on `develop` feature branches, following the process rules above.
+Rust agents and skills are installed via Rand's existing installation
+process — do NOT copy them from atm-core or hand-author them. Rand runs the
+installation when ready. Until `.claude/agents/` and `.claude/skills/` exist
+here: single-session Claude Code, working on `develop` feature branches,
+following the process rules above. The sprint-planning guidelines remain
+readable at their atm-core path (see rule 5) in the meantime.
